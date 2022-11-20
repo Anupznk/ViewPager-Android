@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My ViewPager"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_below="@id/title"/>
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_pager"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        app:piv_animationType="worm"
+        app:piv_radius="3dp"
+        app:piv_viewPager="@id/view_pager"/>
+
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="anupbhowmik"
+        android:textSize="15sp"
+        android:layout_below="@id/page_indicator"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+         />
+
+
+</RelativeLayout>
